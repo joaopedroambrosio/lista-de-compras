@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+      <h1>Lista de Compras</h1>
+    </header>
+    <main>
+      <form>
+        <button type="button" id="btn-voltar">voltar</button>
+        <h2>Compras da semana</h2>
+        <input type="text" id="digitar" placeholder="digitar">
+        <button type="submit" id="add">Adicionar item</button>
+
+        
+        <ul>
+            <li class="guest"><input type="checkbox" id="arroz"><label for="arroz">Arroz</label>
+            <button type="button" class="btn-remover">🗑️</button></li>
+            <li class="guest"><input type="checkbox" id="feijao"><label for="feijao">Feijão</label>
+            <button type="button" class="btn-remover">🗑️</button></li>
+            <li class="guest"><input type="checkbox" id="macarrao"><label for="macarrao">Macarrão</label>
+            <button type="button" class="btn-remover">🗑️</button></li>
+        </ul>
+      </form>
+    </main>
+<script src="script.js"></script>
+</body>
+</html>

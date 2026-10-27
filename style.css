@@ -1,0 +1,205 @@
+
+/* ===== CONFIGURAÇÕES GERAIS ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f7f3;
+    color: #26352b;
+    min-height: 100vh;
+}
+
+/* ===== CABEÇALHO ===== */
+header {
+    background: linear-gradient(135deg, #246b45, #3b9563);
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* ===== CONTEÚDO PRINCIPAL ===== */
+main {
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 550px;
+    margin: 45px auto;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(35, 80, 48, 0.09);
+}
+
+/* ===== BOTÃO VOLTAR ===== */
+#btn-voltar {
+    background-color: #edf5ef;
+    color: #287448;
+    border: none;
+    padding: 10px 17px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#btn-voltar:hover {
+    background-color: #d9ecdf;
+    transform: translateY(-2px);
+}
+
+/* ===== TÍTULO ===== */
+h2 {
+    margin: 25px 0 20px;
+    font-size: 1.4rem;
+    color: #245b3a;
+}
+
+/* ===== CAMPO DE TEXTO ===== */
+#digitar {
+    width: 68%;
+    padding: 13px;
+    border: 1px solid #d6e2d8;
+    border-radius: 9px;
+    outline: none;
+    font-size: 15px;
+    color: #26352b;
+    background-color: #fbfdfb;
+    transition: 0.2s;
+}
+
+#digitar:focus {
+    border-color: #38945d;
+    box-shadow: 0 0 0 3px rgba(56, 148, 93, 0.12);
+}
+
+#digitar::placeholder {
+    color: #9aa79d;
+}
+
+/* ===== BOTÃO ADICIONAR ===== */
+#add {
+    width: 30%;
+    padding: 13px 8px;
+    background-color: #2e804e;
+    color: #ffffff;
+    border: none;
+    border-radius: 9px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#add:hover {
+    background-color: #22663d;
+    transform: translateY(-2px);
+}
+
+/* ===== LISTA DE COMPRAS ===== */
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px;
+    background-color: #f7faf7;
+    border: 1px solid #e5eee6;
+    border-radius: 11px;
+    transition: 0.2s;
+}
+
+li:hover {
+    background-color: #eff7f0;
+    border-color: #c9dfce;
+}
+
+/* ===== CHECKBOX ===== */
+li input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #2e804e;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+/* ===== NOME DOS PRODUTOS ===== */
+li label {
+    flex: 1;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* Produto comprado */
+li input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+    color: #8a9a8e;
+}
+
+/* ===== BOTÃO REMOVER ===== */
+.btn-remover {
+    background-color: #fff0ef;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-remover:hover {
+    background-color: #ffd9d5;
+    transform: scale(1.08);
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 480px) {
+    header {
+        padding: 24px 15px;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    main {
+        width: 92%;
+        margin: 25px auto;
+        padding: 22px 16px;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    #digitar {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #add {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    li {
+        padding: 13px 11px;
+    }
+}
